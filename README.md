@@ -47,4 +47,4 @@
 * docker run -d --name mysql --network two-tier -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql:latest
 ## Now Make Two-Tier-Flask-App within network Command is:-
 * docker run -d -p 5000:5000 --network two-tier -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops flasks-backend-app:latest
-### Now both Containers Are Running Within Networks you can check on public_ip_add:5000
+### Now both Containers Are Running Within Networks you can check on "public_ip_add:5000"
