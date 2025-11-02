@@ -1,5 +1,5 @@
 # Docker-Networking-Project
-## How to connect two container within Metworks.
+## How to connect two container within Networks.
 ## Mysql and two-tier-flask-app 
 ### Commands:-
 * sudo apt-get update -y
