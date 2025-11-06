@@ -50,4 +50,8 @@
 ### Now both Containers Are Running Within Networks you can check on "public_ip_add:5000"
 ## Enter In Cli Mode mysql you can write or read command is:
 ### docker exec -it "container_id" bash
-
+* bash-5.1# mysql -u root -p
+* Enter password:
+* show databases;
+* use devops;
+* mysql> select * from messages;
