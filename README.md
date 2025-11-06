@@ -55,3 +55,19 @@
 * show databases;
 * use devops;
 * mysql> select * from messages;
+
+# Volumes And Storages:-
+## How To Attached Volumes To Containers.
+### First Steps:- Stop Container like
+* docker stop <container_id>
+* docker rm <container_id>
+
+### Second Steps:- Create Volumes.
+* docker volune ls ---> shows your current volumes in systems
+* docker volume create <volune_name>
+* docker volume ls
+
+### Third Steps:- Volume Attached to Containers.
+* docker run -d --name mysql --network two-tier -v mysql-data:/var/lib/docker/volumes -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=devops mysql:latest
+* docker run -d -p 5000:5000 --network two-tier -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=root -e MYSQL_DB=devops flasks-backend-app:latest
+* cd /var/lib/docker/volumes 
